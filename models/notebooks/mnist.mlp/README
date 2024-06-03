@@ -1,0 +1,50 @@
+If you have your code in a Jupyter Notebook (`.ipynb`), you can convert it to a Python script (`.py`):
+
+```python
+pip install jupyter
+jupyter nbconvert --to script your_notebook.ipynb
+```
+
+# MNIST Classification with TensorFlow
+
+This repository contains code for building and training a simple feedforward neural network to classify handwritten digits from the MNIST dataset using TensorFlow.
+
+## Overview
+
+The MNIST dataset consists of 70,000 grayscale images of handwritten digits (0-9). Each image is 28x28 pixels.
+
+The model implemented in this code uses a feedforward neural network architecture with the following layers:
+
+1. Input Layer: Flatten layer to convert the 2D input image (28x28) into a 1D array (784).
+2. Hidden Layer: Dense layer with 128 neurons and ReLU activation function.
+3. Output Layer: Dense layer with 10 neurons and softmax activation function for classifying into one of 10 digit classes.
+
+## Setup
+
+To run the code, you need to have TensorFlow installed. You can install it via pip:
+
+```bash
+pip install tensorflow
+```
+
+## Usage
+
+Run the `mnist_classification.py` script to train the model and evaluate its performance on the MNIST test dataset. The trained model will be saved as `mnist_model.h5`.
+
+```bash
+python mnist_classification.py
+```
+
+## Requirements
+
+- Python 3.x
+- TensorFlow
+- NumPy
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+You can add additional sections such as "Installation", "Contributing", "Acknowledgments", etc., based on the specific needs of your project. If you want the README to reference the Jupyter Notebook instead, just mention that the code is available in the notebook and provide instructions for running Jupyter Notebooks.
